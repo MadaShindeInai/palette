@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CodeJam Canvas</title>
+<link href="style.css" rel="stylesheet"></head>
+<body>
+  <header>
+    <div class="inner">
+      <div class="header">
+        <button class="dropdown-menu">
+          <img src="images/menu.png" alt="menu"  width="24" height="24">
+        </button>
+        <h1><a href="#">CodeJam - Pallete</a></h1>
+        <button class="dropdown-options">
+          <img src="images/options.png" alt="options" width="12" height="24">
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section>
+    <div class="inner">
+      <div class="work-place">
+        <div class="paint-controls">
+          <div class="tool-block">
+            <div class="tool-block__item paintBucket">
+              <img id="paintBucket" class="paintBucket" src="images/bucket.png" alt="bucket" width="24" height="24"> 
+              <span class="tool-block__text paintBucket">Paint bucket</span>
+            </div>
+            <div class="tool-block__item chooseColor">
+              <img id="chooseColor" class="chooseColor" src="images/pipette.png" alt="pipe" width="24" height="24">
+              <span class="tool-block__text chooseColor">Choose color</span>
+            </div>
+            <div class="tool-block__item pencil">
+              <img id="pencil" class="pencil" src="images/pencil.png" alt="move" width="24" height="24">
+              <span class="tool-block__text pencil">Pencil</span>
+            </div>
+            <div class="tool-block__item transform">
+              <img id="transform" class="transform" src="images/transform.png" alt="arrows" width="24" height="24">
+              <span class="tool-block__text transform">Transform</span>
+            </div>
+          </div>
+          <div class="color-block">
+            <label id="currColorLabel" class="color-block__item color-block__text">
+              <div class="color-block__circle-curr" ></div>
+              <input id="currColor" type="color" value="#00FF00" >
+              Current color
+            </label>
+            <div class="color-block__item color-block__text prev">
+              <div id="prevColor" class="color-block__circle-prev prev" ></div>
+              <span class ="prev">Prev color</span>
+              </div>
+            <div class="color-block__item color-block__text red">
+              <div class="color-block__circle-red red " ></div>
+              <span class="red">Red</span>
+            </div>
+            <div class="color-block__item color-block__text blue">
+              <div class="color-block__circle-blue blue" ></div>
+              <span class="blue">Blue</span>
+            </div>
+          </div>  
+        </div>
+        <canvas class="canvas-field">
+        </canvas>
+      </div>
+    </div>
+    </section>
+  </main>
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>
