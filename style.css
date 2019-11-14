@@ -413,44 +413,19 @@ h1 {
   margin-right: 16px;
   margin-left: auto; }
 
-.header {
-  display: flex;
-  box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.25), 0 4px 3px rgba(0, 0, 0, 0.22); }
-
-.dropdown-menu,
-.dropdown-options {
-  background-color: transparent;
+.canvas128,
+.canvas256,
+.canvas512 {
+  line-height: 46px;
+  background-color: #ffffff;
   border: 0;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
   cursor: pointer; }
-
-.work-place {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding-top: 79px; }
-
-.paint-controls {
-  display: flex;
-  flex-direction: column;
-  margin-top: 72px;
-  margin-bottom: 90px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25), 0 9px 4px rgba(0, 0, 0, 0.22); }
-
-.paint-controls-right {
-  margin-left: 0; }
-
-main .inner {
-  padding: 0 29px; }
-
-.tool-block,
-.color-block {
-  display: flex;
-  flex-direction: column;
-  width: 228px; }
-
-.tool-block-right {
-  height: auto; }
+  .canvas128:active,
+  .canvas256:active,
+  .canvas512:active {
+    background-color: rgba(201, 188, 188, 0.678);
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px white; }
 
 .tool-block__item,
 .color-block__item {
@@ -500,6 +475,48 @@ input[type="color"] {
 .color-block__circle-blue {
   background-color: #00bcd4; }
 
+.active {
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px white; }
+
+.header {
+  display: flex;
+  box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.25), 0 4px 3px rgba(0, 0, 0, 0.22); }
+
+.dropdown-menu,
+.dropdown-options {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer; }
+
+.work-place {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 79px; }
+
+.paint-controls {
+  display: flex;
+  flex-direction: column;
+  margin-top: 72px;
+  margin-bottom: 90px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25), 0 9px 4px rgba(0, 0, 0, 0.22); }
+
+.paint-controls-right {
+  margin-left: 0; }
+
+main .inner {
+  padding: 0 29px; }
+
+.tool-block,
+.color-block {
+  display: flex;
+  flex-direction: column;
+  width: 228px; }
+
+.tool-block-right {
+  height: auto; }
+
 .canvas-field {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25), 0 9px 4px rgba(0, 0, 0, 0.22); }
 
@@ -507,9 +524,6 @@ canvas {
   width: 512px;
   height: 512px;
   image-rendering: pixelated; }
-
-.active {
-  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px white; }
 
 @media (max-width: 820px) {
   .work-place {
