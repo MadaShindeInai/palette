@@ -14,6 +14,7 @@
           <img src="images/menu.png" alt="menu"  width="24" height="24">
         </button>
         <h1><a href="#">CodeJam - Pallete</a></h1>
+        <a class="login" href="https://github.com/login/oauth/authorize?client_id=f476cbe1146b74def3b4&redirect_uri=https://madashindeinai.github.io/palette/callback">кек</a>
         <button class="dropdown-options">
           <img src="images/options.png" alt="options" width="12" height="24">
         </button>
@@ -23,8 +24,8 @@
   <main>
     <section>
     <div class="inner">
-      <div class="work-place" onmousedown="return false" onselectstart="return false">
-        <div class="paint-controls">
+      <div class="work-place">
+        <div class="paint-controls" onmousedown="return false" onselectstart="return false">
           <div class="tool-block">
             <div class="tool-block__item paintBucket" onmousedown="return false" onselectstart="return false">
               <img id="paintBucket" class="paintBucket" src="images/bucket.png" alt="bucket" width="24" height="24"> 
@@ -43,7 +44,7 @@
               <span class="tool-block__text transform">Transform</span>
             </div>
           </div>
-          <div class="color-block">
+          <div class="color-block" onmousedown="return false" onselectstart="return false">
             <label id="currColorLabel" class="color-block__item color-block__text" onmousedown="return false" onselectstart="return false">
               <div class="color-block__circle-curr"></div>
               <input id="currColor" type="color" >
@@ -63,13 +64,27 @@
             </div>
           </div>  
         </div>
-        <canvas class="canvas-field">
-        </canvas>
-        <div class="paint-controls paint-controls-right">
+        <div class="canvas-container">
+          <div class="picture-load-panel">
+            <button class="load">Load</button>
+            <div class="d3">
+              <form>
+                <input type="text" id ="selectedTownTxt" placeholder="Enter your request">
+                <button type="submit" disabled></button>
+              </form>
+            </div>
+            <button class="grayscale">B&W</button>
+          </div>
+          <canvas class="canvas-field">
+          </canvas>
+        </div>
+        
+        <div class="paint-controls paint-controls-right" onmousedown="return false" onselectstart="return false">
           <div class="tool-block tool-block-right">
             <button class="canvas128">128 х 128</button>
             <button class="canvas256">256 х 256</button>
-            <button class="canvas512">512 х 512</button> 
+            <button class="canvas512">512 х 512</button>
+            <button class="clear">Clear Your Field</button> 
           </div>  
         </div>
       </div>
